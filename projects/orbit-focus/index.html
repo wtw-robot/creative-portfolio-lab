@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A calm, configurable focus timer."><title>Orbit Focus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-mode="focus">
+  <header><a href="../../index.html" class="back">← 返回作品集</a><div class="status"><i></i><span>本地运行</span></div></header>
+  <main>
+    <section class="intro"><p class="kicker">Orbit Focus</p><h1>把注意力，<br>留给此刻。</h1><p>设置一段不被打扰的时间。我们会守住节奏，提醒你何时停下，何时重新出发。</p></section>
+    <section class="timer-panel" aria-label="Focus timer">
+      <div class="mode-tabs" role="tablist"><button class="active" data-mode="focus">专注</button><button data-mode="break">休息</button></div>
+      <div class="timer-wrap">
+        <svg viewBox="0 0 240 240" aria-hidden="true"><circle class="track" cx="120" cy="120" r="106"></circle><circle class="progress" cx="120" cy="120" r="106"></circle></svg>
+        <div class="timer-readout"><span id="time">25:00</span><small id="phase">FOCUS SESSION</small></div>
+      </div>
+      <div class="controls"><button id="reset" class="icon" aria-label="Reset timer">↺</button><button id="toggle" class="main-button">开始专注</button><button id="skip" class="icon" aria-label="Skip session">→</button></div>
+      <div class="presets" aria-label="Timer presets"><button data-minutes="15">15</button><button class="selected" data-minutes="25">25</button><button data-minutes="45">45</button><button data-minutes="60">60</button></div>
+    </section>
+  </main>
+  <aside class="session-strip"><div><span>今日完成</span><strong id="sessions">0 次</strong></div><div><span>专注时长</span><strong id="focusTotal">0 分钟</strong></div><div><span>当前设置</span><strong id="setting">25 / 5</strong></div></aside>
+  <script src="app.js"></script>
+</body></html>
+
