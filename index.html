@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Three thoughtful, interactive web experiments built with vanilla HTML, CSS, and JavaScript.">
+  <title>Creative Portfolio Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Creative Portfolio Lab home">
+      <span class="brand-mark" aria-hidden="true">CL</span>
+      <span>Creative Lab</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#work">作品</a>
+      <a href="#about">关于</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Selected experiments · 2026</p>
+        <h1>Useful tools,<br><span>carefully made.</span></h1>
+        <p class="lede">三个有温度的网页作品，用清晰的交互解决日常的小问题。无需登录，无需安装，打开即用。</p>
+        <a class="primary-link" href="#work">探索作品 <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="core"><span>03</span><small>projects</small></div>
+        <div class="floating-label label-one">focus</div>
+        <div class="floating-label label-two">color</div>
+        <div class="floating-label label-three">share</div>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <p class="eyebrow">The collection</p>
+        <h2 id="work-title">三个作品，三种节奏</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card card-focus">
+          <a class="card-link" href="projects/orbit-focus/index.html" aria-label="Open Orbit Focus">
+            <div class="card-visual focus-visual" aria-hidden="true">
+              <div class="mini-timer"><span>24:38</span><i></i></div>
+              <div class="mini-chip">deep work</div>
+            </div>
+            <div class="card-copy">
+              <div><span class="project-number">01</span><span class="project-tag">Productivity</span></div>
+              <h3>Orbit Focus</h3>
+              <p>会呼吸的专注计时器，在工作和休息之间找到自然节奏。</p>
+              <span class="open-project">打开项目 <b aria-hidden="true">↗</b></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card card-chroma">
+          <a class="card-link" href="projects/chroma-lab/index.html" aria-label="Open Chroma Lab">
+            <div class="card-visual chroma-visual" aria-hidden="true">
+              <span style="--swatch:#ff6b55"></span><span style="--swatch:#ffd166"></span><span style="--swatch:#153243"></span>
+              <div class="contrast-pill">AAA · 9.84</div>
+            </div>
+            <div class="card-copy">
+              <div><span class="project-number">02</span><span class="project-tag">Design utility</span></div>
+              <h3>Chroma Lab</h3>
+              <p>快速生成配色并检查文字对比度，让好看与易读同时发生。</p>
+              <span class="open-project">打开项目 <b aria-hidden="true">↗</b></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card card-share">
+          <a class="card-link" href="projects/fairshare/index.html" aria-label="Open FairShare">
+            <div class="card-visual share-visual" aria-hidden="true">
+              <div class="receipt-line"><span>Weekend trip</span><b>¥1,286</b></div>
+              <div class="avatar-stack"><i>A</i><i>M</i><i>J</i><i>+2</i></div>
+              <div class="split-line"><span>You pay</span><b>¥257.20</b></div>
+            </div>
+            <div class="card-copy">
+              <div><span class="project-number">03</span><span class="project-tag">Finance</span></div>
+              <h3>FairShare</h3>
+              <p>灵活的多人费用分摊器，让旅行结账少一点计算，多一点轻松。</p>
+              <span class="open-project">打开项目 <b aria-hidden="true">↗</b></span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">About this collection</p>
+      <div class="about-grid">
+        <h2>简单，不代表<br>缺少细节。</h2>
+        <div>
+          <p>每个项目都由原生 HTML、CSS 和 JavaScript 构建，注重响应式布局、键盘操作与清晰的信息层级。</p>
+          <p>它们是独立可用的工具，也是对产品思考、视觉设计和前端实现的完整练习。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>Creative Portfolio Lab</span><span>Built with curiosity · 2026</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
